@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <children>
+      <HBox layoutX="122.0" layoutY="100.0" prefHeight="200.0" prefWidth="368.0" spacing="10.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="80.0" spacing="25.0">
+               <children>
+                  <Text fx:id="username" strokeType="OUTSIDE" strokeWidth="0.0" text="username" />
+                  <Text fx:id="password" strokeType="OUTSIDE" strokeWidth="0.0" text="password" />
+               </children>
+               <padding>
+                  <Insets top="10.0" />
+               </padding>
+            </VBox>
+            <VBox alignment="BOTTOM_CENTER" prefHeight="200.0" prefWidth="155.0" spacing="10.0">
+               <children>
+                  <TextField fx:id="userTxtField" />
+                  <PasswordField fx:id="pwTxtField" />
+                  <HBox alignment="BOTTOM_CENTER" prefHeight="54.0" prefWidth="150.0">
+                     <children>
+                        <Button fx:id="loginB" mnemonicParsing="false" onAction="#onLoginButtonClick" text="Login" />
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="200.0" prefWidth="129.0">
+               <padding>
+                  <Insets left="10.0" top="42.0" />
+               </padding>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </HBox>
+      <Text fx:id="welcomeTxt" layoutX="123.0" layoutY="94.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome! Please Enter Your Login Information">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Text>
+      <Button fx:id="loginExitB" layoutX="534.0" layoutY="353.0" mnemonicParsing="false" onAction="#onLoginExitB" text="Exit" />
+      <Label fx:id="userZoneId" layoutX="26.0" layoutY="357.0" />
+   </children>
+</AnchorPane>

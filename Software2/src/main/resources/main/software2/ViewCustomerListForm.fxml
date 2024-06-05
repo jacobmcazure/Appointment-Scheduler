@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ViewCustomerListController">
+   <children>
+      <Text layoutX="25.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Customer List">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="customerListTable" layoutX="25.0" layoutY="61.0" prefHeight="250.0" prefWidth="750.0">
+         <columns>
+            <TableColumn fx:id="customeridCol" prefWidth="70.0" text="ID" />
+            <TableColumn fx:id="customernameCol" prefWidth="170.0" text="Customer Name" />
+            <TableColumn fx:id="customerPhonenumberCol" prefWidth="143.0" text="Phone Number" />
+            <TableColumn fx:id="customerAddressCol" prefWidth="144.0" text="Address" />
+            <TableColumn fx:id="customerZipcodeCol" prefWidth="126.0" text="Zip code" />
+            <TableColumn fx:id="customerDivisionidCol" prefWidth="95.0" text="Division ID" />
+         </columns>
+      </TableView>
+      <Button fx:id="customerListBackB" layoutX="734.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCustomerListBackB" text="Back" />
+      <Button fx:id="customerListAddB" layoutX="33.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCustomerListAddB" text="Add Customer" />
+      <Button fx:id="customerListUpdateB" layoutX="141.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCustomerListUpdateB" text="Update Customer" />
+      <Button fx:id="CustomerListDeleteB" layoutX="443.0" layoutY="350.0" mnemonicParsing="false" onAction="#onCustomerListDeleteB" text="Delete" />
+      <Text layoutX="494.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To delete a customer, click on a customer in the table below and press the &quot;Delete&quot; button." wrappingWidth="280.8828125" />
+      <Label fx:id="customerErrorLbl" layoutX="526.0" layoutY="333.0" />
+   </children>
+</AnchorPane>

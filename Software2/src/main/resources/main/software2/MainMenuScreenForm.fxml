@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainMenuScreenController">
+   <children>
+      <Text fx:id="welcomeTxt" layoutX="244.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome back!">
+         <font>
+            <Font name="Bell MT" size="18.0" />
+         </font>
+      </Text>
+      <Label layoutX="126.0" layoutY="83.0" text="I would like to: ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" layoutX="126.0" layoutY="108.0" prefHeight="76.0" prefWidth="307.0" spacing="30.0">
+         <children>
+            <Button fx:id="viewCustomerListB" mnemonicParsing="false" onAction="#onViewCustomerListB" text="View Customers List" />
+            <Button fx:id="viewAppointmentListB" mnemonicParsing="false" onAction="#onViewAppointmentListB" text="View Appointments List" />
+         </children>
+      </HBox>
+      <Button fx:id="logoutB" layoutX="458.0" layoutY="349.0" mnemonicParsing="false" onAction="#onLogoutB" text="Logout" />
+      <Button fx:id="viewReportsB" layoutX="147.0" layoutY="200.0" mnemonicParsing="false" onAction="#onViewReportsB" text="View Reports" />
+      <Label fx:id="userZoneId" layoutX="26.0" layoutY="357.0" />
+   </children>
+</AnchorPane>
